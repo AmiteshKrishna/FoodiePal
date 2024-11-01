@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Mono;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fdf4e3;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+    background-image: url(../images/Background-wooden-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 0.1px #3d3a2f;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #f2ff65;
+    /* text-decoration: underline 2px #fff; */
+}
+
+.logo a{
+    font-size: 24px;
+    color: #f9c74f;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.join-button{
+    background-color: #f9c74f;
+    color: #7a5230;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #3d3a2f;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 1px solid #7a5230;
+    border-radius: 2px;
+}
+
+.join-button:hover{
+    background-color: #924501;
+    color: #f9c74f;
+}
+
+.hero-section{
+    background-image: url('../images/hero-section-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+    position: relative;
+    justify-content: center ;
+}
+
+.hero-content{
+    position: relative;
+    max-width: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* .top-recipes {
+    margin-right: 50px; Adjust based on your layout
+} */
+
+.hero-content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.explore-button{
+    background-color: #ff945e;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover{
+    background-color: #e77d4e;
+}
+
+/* Content Section */
+.content-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f5f1e9;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #e0d3b8;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    color: #3d3a2f;
+    margin: 20px 0;
+}
+
+.card .join-button{
+    background-color: #ff945e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card .join-button:hover{
+    background-color: #e77d4e;
+}
+
+
+/* Footer */
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px){
+    .hero-section{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-content, .top-recipes{
+        max-width: 100%;
+    }
+
+    .hero-content h1{
+            font-size: 3rem;
+    }
+
+    .top-recipes h2{
+        font-size: 2rem;
+    }
+
+    .content-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

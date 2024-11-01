@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Mono;
+}
+
+body{
+    background-color: #fdf4e3;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-image: url(../images/Background-wooden-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 0.1px #3d3a2f;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #f2ff65;
+}
+
+.logo a{
+    font-size: 24px;
+    color: #f9c74f;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.join-button{
+    background-color: #f9c74f;
+    color: #7a5230;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #3d3a2f;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 1px solid #7a5230;
+    border-radius: 2px;
+}
+
+.join-button:hover{
+    background-color: #924501;
+    color: #f9c74f;
+}
+
+/* Hero Section for Contact Us */
+.hero-section-contact {
+    background-image: url('../images/blog/contactus-banner.jpg'); /* Add path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact-section .container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #540000;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-btn {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #555;
+}
+
+/* Contact Details Section */
+.contact-details {
+    padding: 60px 0;
+    background-color: #fdf1e0; /* Soft beige background for a warm feel */
+}
+
+.contact-details .container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-details h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif; /* Elegant serif font for headings */
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Evenly spaces items */
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.info-item {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for elegance */
+    width: 250px; /* Fixed width to make items uniform */
+    transition: transform 0.3s ease;
+}
+
+
+.info-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.info-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #e27d60; /* Highlight color for titles */
+    font-family: 'Arial', sans-serif; /* Clean font for titles */
+}
+
+.info-item p, .info-item a {
+    font-size: 16px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.info-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #e27d60; /* Hover color to match heading style */
+}
+
+.social-media {
+    /* list-style: none; */
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+.social-media li {
+    margin-bottom: 5px;
+}
+
+.social-media li a {
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 15px;
+}
+
+.social-media li a:hover {
+    color: #e27d60; /* Match the brand color on hover */
+}
+
+#contact-info-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Evenly spaces items */
+    margin-top: 50px;
+}
+
+#info-map{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for elegance */
+    width: 1000px; /* Fixed width to make items uniform */
+    transition: transform 0.3s ease;
+}
+
+#info-map h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #e27d60; /* Highlight color for titles */
+    font-family: 'Arial', sans-serif; /* Clean font for titles */
+}
+
+#info-map p, .info-map a {
+    font-size: 16px;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+#info-map a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #e27d60; /* Hover color to match heading style */
+}
+
+#info-map:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Map iframe */
+iframe {
+    border: 2px solid #e27d60;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+
+footer p {
+    font-size: 1rem;
+}

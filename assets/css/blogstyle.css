@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Mono;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fdf4e3;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-image: url(../images/Background-wooden-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 0.1px #3d3a2f;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #f2ff65;
+}
+
+.logo a{
+    font-size: 24px;
+    color: #f9c74f;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.join-button{
+    background-color: #f9c74f;
+    color: #7a5230;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #3d3a2f;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 1px solid #7a5230;
+    border-radius: 2px;
+}
+
+.join-button:hover{
+    background-color: #924501;
+    color: #f9c74f;
+}
+
+/* Hero Section */
+.hero-section-community {
+    background-image: url('../images/blog/Community-banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-section-community::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero-content .btn:hover {
+    background-color: #e5533d;
+}
+
+/* Community Intro Section */
+.community-intro {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.community-intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.community-intro p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Discussion Section */
+.community-discussions {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.community-discussions h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.discussion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.discussion-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.discussion-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6347;
+    text-shadow: 0.5px 0.5px 0.1px black;
+}
+
+.discussion-card p {
+    font-size: 16px;
+    color: black;
+}
+
+.discussion-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discussion-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Share a Recipe Section */
+.share-recipe {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.share-recipe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.share-recipe form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.share-recipe label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+.share-recipe input[type="text"],
+.share-recipe textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.share-recipe input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.share-recipe input[type="submit"] {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.share-recipe input[type="submit"]:hover {
+    background-color: #e5533d;
+}
+
+/* Join Community Section */
+.join-community {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.join-community h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.join-community p {
+    font-size: 18px;
+    color: #540000;
+    margin-bottom: 30px;
+}
+
+.join-community .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-community .btn:hover {
+    background-color: #e5533d;
+}
+
+/* Footer */
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+
+footer p {
+    font-size: 1rem;
+}

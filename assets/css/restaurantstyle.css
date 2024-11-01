@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Mono;
+}
+
+body{
+    background-color: #fdf4e3;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-image: url("../images/Background-wooden-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 0.1px #3d3a2f;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #f2ff65;
+}
+
+.logo a{
+    font-size: 24px;
+    color: #f9c74f;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.join-button{
+    background-color: #f9c74f;
+    color: #7a5230;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #3d3a2f;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 1px solid #7a5230;
+    border-radius: 2px;
+}
+
+.join-button:hover{
+    background-color: #924501;
+    color: #f9c74f;
+}
+
+/* Hero Section */
+.hero-section-restaurants {
+    background: url('../images/restaurant/Restaurant-banner.jpg!bw700') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section-restaurants::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 0.1px black;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Restaurants Section */
+.restaurants-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.restaurants-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.restaurant-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-10px);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-card h3 {
+    font-size: 1.8rem;
+    padding: 15px;
+    color: #ff6600;
+}
+
+.restaurant-card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.restaurant-card .btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.restaurant-card .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.review-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+}
+
+.review-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating span {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+
+footer p {
+    font-size: 1rem;
+}

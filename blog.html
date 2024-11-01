@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodiePal - Community</title>
+    <link rel="stylesheet" href="assets/css/blogstyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1>FoodiePal</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="healthtips.html">Health Tips</a></li>
+                <li><a href="restaurant-guide.html">Restaurants</a></li>
+                <li><a href="blog.html">Community</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="joinus.html"><button class="join-button">Join Us</button></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section for Community Page -->
+    <section class="hero-section-community">
+        <div class="hero-content">
+            <h1>Join the Culinary Community</h1>
+            <p>Share your recipes, tips, and experiences with fellow food lovers!</p>
+            <a href="#join-community" class="btn">Join Us</a>
+        </div>
+    </section>
+
+    <!-- Community Introduction -->
+    <section class="community-intro">
+        <h2>Welcome to the Community</h2>
+        <p>Explore discussions, share recipes, give feedback, and connect with food enthusiasts from around the world.</p>
+    </section>
+
+    <!-- Discussion Section -->
+    <section class="community-discussions">
+        <h2>Recent Discussions</h2>
+        <div class="discussion-grid">
+            <div class="discussion-card">
+                <h3>Best Ways to Cook with Spices:</h3>
+                <p>Join the conversation on how to enhance your dishes with various spices. Share your experience!</p>
+                <a href="https://www.reddit.com/r/cookingforbeginners/comments/xx67at/how_do_you_cook_with_spices/" target="_blank" class="btn">View Discussion</a>
+            </div>
+            <div class="discussion-card">
+                <h3>Healthy Cooking Tips And Tricks:</h3>
+                <p>Discuss ways to make your favorite dishes healthier without compromising flavor.</p>
+                <a href="https://www.reddit.com/r/EatCheapAndHealthy/comments/126fb2p/tips_on_cooking_healthier/" target="_blank" class="btn">View Discussion</a>
+            </div>
+            <div class="discussion-card">
+                <h3>How to Master Sourdough Bread:</h3>
+                <p>Chat with other bakers and get tips on perfecting your sourdough technique.</p>
+                <a href="https://www.reddit.com/r/Sourdough/comments/1asjwco/how_to_time_the_making_of_sourdough_bread/" target="_blank" class="btn">View Discussion</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share a Recipe -->
+    <section id="share-recipe" class="share-recipe">
+        <h2>Share Your Favorite Recipe</h2>
+        <form action="submit_recipe.php" method="post">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+            
+            <label for="recipe-description">Description:</label>
+            <textarea id="recipe-description" name="recipe-description" rows="5" required></textarea>
+            
+            <label for="recipe-image">Upload Image:</label>
+            <input type="file" id="recipe-image" name="recipe-image" accept="image/*">
+
+            <input type="submit" value="Submit Recipe" class="btn">
+        </form>
+    </section>
+
+    <!-- Join the Community -->
+    <section id="join-community" class="join-community">
+        <h2>Become a Part of Our Community</h2>
+        <p>Sign up today and join the conversation. Meet fellow culinary enthusiasts, share tips, and learn from the best.</p>
+        <a href="joinus.html" class="btn">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FoodiePal. All Rights Reserved</p>
+     </footer>
+
+     <script src="assets/js/sharerecipe.js"></script>
+</body>
+</html>
