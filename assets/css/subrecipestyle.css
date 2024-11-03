@@ -131,13 +131,19 @@ body {
     margin-bottom: 20px;
 }
 
-.recipe-details ul, .recipe-details ol {
+.recipe-details ul{
     margin: 0;
     padding: 0 20px;
     list-style: inside;
 }
 
-.recipe-details li {
+.recipe-details ol{
+    margin: 0;
+    margin-left: 25px;
+    padding: 0 20px;
+}
+
+.recipe-details li{
     margin-bottom: 8px;
     font-size: 1rem;
     color: #555;
